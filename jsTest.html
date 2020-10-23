@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Progress Bar</title>
+  <link rel="stylesheet" href="jsTest.css">
+</head>
+<body>
+
+  <h1>Progress bar online</h1>
+  <h2>This webpage calculates the progress of a porcess given two numbers, a goal and a quantity.</h2>
+  <p id="intructionsText">
+    <strong>Instructions:</strong> In the top input you must type a number, which represents the goal.
+    In the bottom input type another number, which represents the quantity until now. When you are done typing the number click outside the input field and the progress will
+    update automatically.
+  </p>
+
+  <div>
+    <label for="goal">Goal</label>
+    <input type="number" id="goal" placeholder="Enter a number">
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" placeholder="Enter a number">
+  </div>
+
+  <div id="bar">
+    <div id="fill"></div>
+  </div>
+
+  <h2 id="barPercentageText">Bar progress: <span id="percentage">0</span>%</h2>
+
+  <div id="easterEgg" hidden>
+    <h3>Developed by: Sebastián Rivera Soto</h3>
+    <h4>For Middleware's javascript test</h4>
+    <h4>Thank you for your time!</h4>
+    <h4>Extra: Try it on mobile!</h4>
+  </div>
+
+  <h3>Hide/Show elements</h3>
+  <button id="hideProgressBar">Hide/Show progress bar</button>
+  <button id="hidePercentage">Hide/Show percentage</button>
+  <button id="hideInstructions">Hide/Show instructions</button>
+  <button id="showEasterEgg">Hide/Show developer info</button>
+
+  <script src="jsTest.js"></script>
+</body>
+</html>
